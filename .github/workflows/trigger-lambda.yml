@@ -16,5 +16,6 @@ jobs:
       - name: Invoke Lambda
         uses: aws-actions/invoke-lambda@v1
         with:
+          registry: aws-actions
           function-name: example_function
           payload: '{"name": "GitHub Actions"}'
